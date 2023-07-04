@@ -1,6 +1,8 @@
-<% data.forEach(beer => { %>
-<h2><%= beer.name %></h2>
-<h3><%= beer.tagline  %></h3>
-<img src="<%= beer.image_url %>" alt="<%= beer.name %>">
-<p><%= beer.description %></p>
-<% }) %>
+<div class="beer-card">
+  <% data.forEach(beer => { %>
+  <h2><%= beer.name %></h2>
+  <h3><%= beer.tagline  %></h3>
+  <img src="<%= beer.image_url %>" alt="<%= beer.name %>">
+  <p><%= beer.description %></p>
+  <% }) %>
+</div>
